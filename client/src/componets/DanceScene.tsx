@@ -75,7 +75,7 @@ export function DanceScene() {
           console.log("Available animations:", result.animationGroups.map(a => a.name))
         }
 
-        let danceTimeout: NodeJS.Timeout | null = null
+        let danceTimeout: ReturnType<typeof setTimeout> | null = null
   
         const performDance = async () => {
             if (!address) return
@@ -152,10 +152,10 @@ export function DanceScene() {
         danceButton.onPointerUpObservable.add(performDance)
         advancedTexture.addControl(danceButton)
 
-        // Log initial state of model and animations
-        console.log("Model loaded:", character)
-        console.log("Animation groups:", result.animationGroups)
-        console.log("Found dance animation:", danceAnimation)
+        // // Log initial state of model and animations
+        // console.log("Model loaded:", character)
+        // console.log("Animation groups:", result.animationGroups)
+        // console.log("Found dance animation:", danceAnimation)
 
         // Clean up function
         return () => {
