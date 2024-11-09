@@ -32,7 +32,7 @@ export function BuyCreditsButton() {
     <button
       onClick={handleBuyCredits}
       disabled={isPending}
-      className="fixed bottom-4 left-4 bg-green-600 hover:bg-green-700 disabled:bg-green-300 
+      className="fixed top-20 left-4 bg-green-600 hover:bg-green-700 disabled:bg-green-300 
                  text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-200"
     >
       {isPending ? 'Buying...' : 'Buy Credits (10)'}

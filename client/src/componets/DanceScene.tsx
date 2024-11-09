@@ -28,7 +28,7 @@ export function DanceScene() {
         0,
         Math.PI / 3,
         25,
-        new Vector3(0, 50, 0),
+        new Vector3(0, 100, 0),
         scene
       )
       camera.attachControl(canvasRef.current, true)
