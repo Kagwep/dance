@@ -80,7 +80,7 @@ export function DanceScene() {
         const performDance = async () => {
             if (!address) return
   
-            const dancerAccount = privateKeyToAccount(import.meta.env.VITE_PRIVATE_KEY as Hex)
+            const dancerAccount = privateKeyToAccount(import.meta.env.VITE_DANCER as Hex)
   
             try {
               const tx = await writeContractAsync({

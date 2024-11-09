@@ -33,7 +33,7 @@ npm install
 
 2. Create a `.env` file with:
 ```env
-VITE_PRIVATE_KEY=your_private_key_here
+VITE_DANCER=your_private_key_here
 ```
 
 3. Run development server:
