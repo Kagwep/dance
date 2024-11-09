@@ -1,7 +1,7 @@
 import { useWriteContract, useAccount } from 'wagmi'
-import { parseEther, createWalletClient, http, Account } from 'viem'
+import { parseEther, createWalletClient, http, Account, Abi } from 'viem'
 import { privateKeyToAccount } from 'viem/accounts'
-
+import { config } from '../wagmi'
 import { CONTRACT_ADDRESS,ABI } from '../constants'
 
 export function BuyCreditsButton() {
