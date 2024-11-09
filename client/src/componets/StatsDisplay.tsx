@@ -34,7 +34,7 @@ export function StatsDisplay() {
       onLogs: (logs) => {
         // Check if the event is for current user
         console.log(logs)
-        const relevantLog = logs.find(log => 
+        const relevantLog = logs.find((log: any) => 
           log.args.creditOwner?.toLowerCase() === address?.toLowerCase()
           
         )
@@ -52,7 +52,7 @@ export function StatsDisplay() {
       abi: ABI,
       eventName: 'CreditsAdded',
       onLogs: (logs) => {
-        const relevantLog = logs.find(log => 
+        const relevantLog = logs.find((log: any) => 
           log.args.user?.toLowerCase() === address?.toLowerCase()
         )
         if (relevantLog) {

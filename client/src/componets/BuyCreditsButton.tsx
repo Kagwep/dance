@@ -17,11 +17,12 @@ export function BuyCreditsButton() {
     const totalCost = creditPrice * amount
 
     writeContract({
-      abi: ABI,
-      address: CONTRACT_ADDRESS,
-      functionName: 'buyCredits',
-      args: [address, amount],
-      value: totalCost,
+        abi: ABI,
+        address: CONTRACT_ADDRESS,
+        functionName: 'buyCredits',
+        args: [address, amount],
+        value: totalCost,
+        account: ''
     })
   }
 
