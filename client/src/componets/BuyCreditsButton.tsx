@@ -4,10 +4,11 @@ import { privateKeyToAccount } from 'viem/accounts'
 import { config } from '../wagmi'
 import { CONTRACT_ADDRESS,ABI } from '../constants'
 
+
 export function BuyCreditsButton() {
   const { address } = useAccount()
   const { writeContract, isPending } = useWriteContract()
-  
+  const account = useAccount()
 
   const handleBuyCredits = async () => {
  
@@ -22,7 +23,8 @@ export function BuyCreditsButton() {
         functionName: 'buyCredits',
         args: [address, amount],
         value: totalCost,
-        account: ''
+        chain: undefined,
+        account: address
     })
   }
 

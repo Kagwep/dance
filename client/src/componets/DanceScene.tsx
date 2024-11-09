@@ -84,11 +84,12 @@ export function DanceScene() {
   
             try {
               const tx = await writeContractAsync({
-                abi: ABI,
-                address: CONTRACT_ADDRESS,
-                functionName: 'dance',
-                args: [address],
-                account: dancerAccount,
+                  abi: ABI,
+                  address: CONTRACT_ADDRESS,
+                  functionName: 'dance',
+                  args: [address],
+                  account: dancerAccount,
+                  chain: undefined
               })
   
               if (tx) {
