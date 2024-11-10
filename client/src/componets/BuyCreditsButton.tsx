@@ -14,7 +14,7 @@ export function BuyCreditsButton() {
  
 
     const amount = 10n // Example: buying 10 credits
-    const creditPrice = parseEther('0.0001') // 0.0001 ETH per credit
+    const creditPrice = parseEther('0.00001') // 0.0001 ETH per credit
     const totalCost = creditPrice * amount
 
     writeContract({

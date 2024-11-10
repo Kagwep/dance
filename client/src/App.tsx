@@ -3,6 +3,7 @@ import { useAccount } from 'wagmi'
 import { StatsDisplay } from './componets/StatsDisplay'
 import { DanceScene } from './componets/DanceScene'
 import { BuyCreditsButton } from './componets/BuyCreditsButton'
+import LeaderboardDisplay from './componets/LeaderboardDisplay'
 
 function App() {
   const { address, isConnected } = useAccount()
@@ -15,7 +16,8 @@ function App() {
       {isConnected ? (
         <>
         <BuyCreditsButton />
-          <StatsDisplay />
+        <StatsDisplay />
+          <LeaderboardDisplay />
           
         </>
       ) : (

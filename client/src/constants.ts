@@ -1,4 +1,4 @@
 import Dancer from "./abi/dancer.json"
 
-export const CONTRACT_ADDRESS="0x28e4C4954f6Db076c9098a7D0ed9fad3eB914673"
+export const CONTRACT_ADDRESS="0xF9C43324729816D4F223c7A30689111ca31EFBf3"
 export const ABI =Dancer.abi;

@@ -129,11 +129,12 @@ export function DanceScene() {
         danceButton.height = '40px'
         danceButton.color = 'white'
         danceButton.thickness = 0
+        danceButton.left = -40
         danceButton.cornerRadius = 20
         danceButton.background = 'purple'
         danceButton.verticalAlignment = Control.VERTICAL_ALIGNMENT_BOTTOM
         danceButton.horizontalAlignment = Control.HORIZONTAL_ALIGNMENT_CENTER
-        danceButton.top = '-50px'
+        danceButton.top = '-80px'
         
         // Add hover effect
         danceButton.onPointerEnterObservable.add(() => {
